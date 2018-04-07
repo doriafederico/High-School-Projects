@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PendingIntentsFlags</string>
+    <string name="HEADER">Flags</string>
+    <string name="FLAG_CANCEL_CURRENT">FLAG_CANCEL_CURRENT</string>
+    <string name="FLAG_IMMUTABLE">FLAG_IMMUTABLE</string>
+    <string name="FLAG_NO_CREATE">FLAG_NO_CREATE</string>
+    <string name="FLAG_ONE_SHOT">FLAG_ONE_SHOT</string>
+    <string name="FLAG_UPDATE_CURRENT">FLAG_UPDATE_CURRENT</string>
+</resources>
