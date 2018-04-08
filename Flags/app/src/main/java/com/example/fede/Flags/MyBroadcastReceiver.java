@@ -10,9 +10,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver{
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "VIBRATE",
+        Toast.makeText(context, "VIBRATING",
                 Toast.LENGTH_LONG).show();
-        // Vibrate the mobile phone
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(300);
     }

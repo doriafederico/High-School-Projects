@@ -12,34 +12,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Intent intent;
-    PendingIntent pendingIntent;
+    PendingIntent flag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    public void onRadioButtonClicked(View view) {
-        intent = new Intent(this, MyBroadcastReceiver.class);
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.FLAG_CANCEL_CURRENT:
-                    pendingIntent = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-                break;
-            case R.id.FLAG_IMMUTABLE:
-                    pendingIntent = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_IMMUTABLE);
-                break;
-            case R.id.FLAG_NO_CREATE:
-                    pendingIntent = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_NO_CREATE);
-                break;
-            case R.id.FLAG_ONE_SHOT:
-                    pendingIntent = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_ONE_SHOT);
-                break;
-            case R.id.FLAG_UPDATE_CURRENT:
-                    pendingIntent = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-                break;
-        }
     }
 
     public void startAlert(View view) {
@@ -48,9 +26,32 @@ public class MainActivity extends AppCompatActivity {
 
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()
-                + (delay * 1000), pendingIntent);
+                + (delay * 1000), flag);
 
-        Toast.makeText(this, "... waiting " + delay + " seconds",
+        Toast.makeText(this, "... aspetto " + delay + " secondi",
                 Toast.LENGTH_LONG).show();
     }
+
+    public void onRadioButtonClicked(View view) {
+        intent = new Intent(this, MyBroadcastReceiver.class);
+        switch (view.getId()) {
+            case R.id.FLAG_IMMUTABLE:
+            flag = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_IMMUTABLE);
+                break;
+            case R.id.FLAG_CANCEL_CURRENT:
+                    flag = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+                break;
+            case R.id.FLAG_NO_CREATE:
+                    flag = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_NO_CREATE);
+                break;
+            case R.id.FLAG_UPDATE_CURRENT:
+                    flag = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                break;
+            case R.id.FLAG_ONE_SHOT:
+                flag = PendingIntent.getBroadcast(this, 1234567890, intent, PendingIntent.FLAG_ONE_SHOT);
+                break;
+        }
+    }
+
+
 }

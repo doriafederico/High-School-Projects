@@ -19,26 +19,29 @@
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/FLAG_CANCEL_CURRENT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/FLAG_CANCEL_CURRENT" />
-
-        <RadioButton
             android:id="@+id/FLAG_IMMUTABLE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:text="@string/FLAG_IMMUTABLE" />
-
+        <RadioButton
+            android:id="@+id/FLAG_CANCEL_CURRENT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/FLAG_CANCEL_CURRENT" />
         <RadioButton
             android:id="@+id/FLAG_NO_CREATE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onRadioButtonClicked"
             android:text="@string/FLAG_NO_CREATE" />
-
+        <RadioButton
+            android:id="@+id/FLAG_UPDATE_CURRENT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/FLAG_UPDATE_CURRENT" />
         <RadioButton
             android:id="@+id/FLAG_ONE_SHOT"
             android:layout_width="wrap_content"
@@ -46,12 +49,6 @@
             android:onClick="onRadioButtonClicked"
             android:text="@string/FLAG_ONE_SHOT" />
 
-        <RadioButton
-            android:id="@+id/FLAG_UPDATE_CURRENT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:text="@string/FLAG_UPDATE_CURRENT" />
     </RadioGroup>
 
     <EditText
