@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 18 Jun 2018 11:33:33 at http://elezioni2018.comune.venezia.it/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*[name].http://elezioni2018.comune.venezia.it//*
+(winhttrack -qwC2%P%s%uN0%I0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "it, en, *" http://elezioni2018.comune.venezia.it/ -O1 "C:\Mie pagine Web\MATURITA\elezioni 2018" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*[name].http://elezioni2018.comune.venezia.it//* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:35:08	Warning: 	File not parsed, looks like binary: elezioni2018.comune.venezia.it/build/assets/602e9d03.ttf?v2
+11:35:09	Error: 	"Not Found" (404) at link elezioni2018.comune.venezia.it/risultati/451/A/risultati/447/S/1 (from elezioni2018.comune.venezia.it/risultati/451/A/30241)
+11:35:09	Error: 	"Not Found" (404) at link elezioni2018.comune.venezia.it/risultati/451/S/risultati/447/S/1 (from elezioni2018.comune.venezia.it/risultati/451/S/1)
+11:35:11	Error: 	"Not Found" (404) at link elezioni2018.comune.venezia.it/risultati/447/A/risultati/447/S/1 (from elezioni2018.comune.venezia.it/risultati/447/A/30241)
+11:35:11	Error: 	"Not Found" (404) at link elezioni2018.comune.venezia.it/risultati/447/S/risultati/447/S/1 (from elezioni2018.comune.venezia.it/risultati/447/S/1)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 38 seconds : 101 links scanned, 96 files written (4778860 bytes overall) [1456380 bytes received at 14861 bytes/sec], 3848275 bytes transferred using HTTP compression in 40 files, ratio 12%, 7.2 requests per connection
+(4 errors, 1 warnings, 0 messages)
