@@ -3,3 +3,6 @@ Benvenuti a tutti nella mia repo, dove potrete trovare una serie di progetti che
 
 Tra i progetti troviamo:
 - SocialZ
+- Elezioni 2018
+- WS Client & Server
+- Flags
